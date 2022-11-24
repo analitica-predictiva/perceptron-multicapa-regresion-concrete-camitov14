@@ -110,7 +110,7 @@ def pregunta_04():
     #   * Use parada temprana
 
     param_grid = {
-        "mlpregressor__hidden_layer_sizes": [tuple(range(1,9),)],  
+        "mlpregressor__hidden_layer_sizes": [(1,),(2,),(3,),(4,),(5,),(6,),(7,),(8,)],  
         "mlpregressor__activation": ["relu"],  
         "mlpregressor__learning_rate": ["adaptive"],  
         "mlpregressor__momentum": [0.7,0.8,0.9],  
@@ -168,3 +168,4 @@ def pregunta_05():
 
     # Retorne el mse de entrenamiento y prueba
     return mse_train, mse_test
+pregunta_05()
