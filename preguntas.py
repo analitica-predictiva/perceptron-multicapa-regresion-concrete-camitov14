@@ -161,7 +161,7 @@ def pregunta_05():
         y_train,  
         y_train_pred,  
     )
-    mse_test = ____(  
+    mse_test = mean_squared_error(  
         y_test,  
         y_test_pred,  
     )
